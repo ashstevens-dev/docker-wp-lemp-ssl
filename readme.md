@@ -1,6 +1,6 @@
 # docker-wp-lemp-ssl
 
-Docker build for creating a local WordPress website running on a LEMP stack with SSL from Lets Encrypt. Includes a PHPMyAdmin container so you have a GUI for the database.
+Docker build for creating a local WordPress website running on a LEMP stack with SSL from Lets Encrypt. Includes a PHPMyAdmin container so you have a GUI for the database. The nginx.conf includes a variety of directives to enhance the security of the WordPress website.
 
 ### Getting Started
 ``` docker-compose up -d ```
