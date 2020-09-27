@@ -1,6 +1,6 @@
 # docker-wp-lemp-ssl
 
-Docker build for creating a local WordPress website running on a LEMP stack with SSL from Lets Encrypt. Includes a PHPMyAdmin container so you have a GUI for the database. The nginx.conf includes a variety of directives to enhance the security of the WordPress website.
+Docker build for creating a local WordPress website running on a LEMP stack with SSL from Lets Encrypt. Includes a PHPMyAdmin container so you have a GUI for the database. The nginx.conf includes a variety of directives to enhance the security of the WordPress website. Includes MailHog, a testing SMTP server, so you can test site messaging locally.
 
 ### Getting Started
 ``` docker-compose up -d ```
@@ -15,6 +15,9 @@ Docker build for creating a local WordPress website running on a LEMP stack with
 ### Preset PHPMyAdmin creds
 <p><b>User:</b> root</p>
 <p><b>Pass:</b> wordpressrootpw</p>
+
+### Access the testing mail server inbox
+``` http://localhost:8025 ```
 
 ### Edit the nginx.conf file to whitelist your IP and block others
 The IP address you are looking to whitelist comes from the <i>https-portal</i> container.
